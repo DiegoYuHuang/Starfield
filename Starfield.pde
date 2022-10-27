@@ -10,7 +10,7 @@ void setup(){
 }
 
 void draw(){
-  background(255);
+  background(0);
   for (int i=0; i<arr.length;i++){
     arr[i].show();
     arr[i].move();
