@@ -33,8 +33,13 @@ class Particle
   
   void move(){
     myX = myX + (Math.cos(myAngle)*mySpeed);
+      if (myX > 600) {myX = 250;  myY= 250;}
+      else if (myX < 0) {myX = 250;   myY= 250;}
     myY = myY + (Math.sin(myAngle)*mySpeed);
-  }
+      if (myY>550){myY =250;  myX= 250;}  
+      else if (myY < -100) {myY = 250;  myX= 250;}
+}
+  
   
   void show(){
     noStroke();
